@@ -1,4 +1,209 @@
+<!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grandma’s Secret Apple Pie</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-size: 20px;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: url('top-view-apple-with-leaves-corner.jpg') no-repeat bottom right fixed;
+      background-size: cover;
+      background-color: #f9f1dd;
+    }
+    .site-header {
+      background-color: rgba(168, 50, 50, 0.85);
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+    }
+    .site-header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    .site-header p {
+      margin-top: 6px;
+      font-size: 0.95em;
+    }
+    .banner-image {
+      width: 60%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: rgba(255, 255, 255, 0.96);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    h2 {
+      color: #a83232;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+      margin-top: 0;
+    }
+    .ingredients-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px 40px;
+      padding-left: 0;
+      margin-top: 5px;
+    }
+    .ingredients-grid li {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    ol {
+      padding-left: 20px;
+    }
+    .cta-box {
+      background-color: #fdf1f1;
+      border: 2px dashed #a83232;
+      text-align: center;
+      margin-top: 40px;
+      padding: 25px;
+      border-radius: 6px;
+    }
+    .cta-box p {
+      font-size: 1.1em;
+      color: #a83232;
+      margin-bottom: 20px;
+    }
+    .cta-box a {
+      background-color: #a83232;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background 0.3s;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .cta-box a:hover {
+      background-color: #7c2222;
+    }
+    .footer {
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+      margin: 40px 0 20px;
+    }
+    #unlock-container {
+      position: fixed;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      z-index: 999;
+    }
+    #unlock-btn {
+      font-size: 22px;
+      padding: 18px 36px;
+      font-weight: bold;
+      color: white;
+      background-color: #222;
+      border: 2px solid #ccc;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    #unlock-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+    #fullscreen-content {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #121212;
+      color: white;
+      z-index: 1000;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+    .content-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .close-btn {
+      font-size: 20px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #ff4757;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="site-header">
+    <h1>Grandma’s Secret Apple Pie</h1>
+    <p>One bite, and everything changes...</p>
+  </div>
+
+  <img src="images\hq720.jpg" alt="Grandma and Apple Pie" class="banner-image" />
+
+  <div class="container">
+    <h2>Ingredients</h2>
+    <ul class="ingredients-grid">
+      <li>6–7 Granny Smith apples</li>
+      <li>1/2 cup white sugar</li>
+      <li>1/2 cup brown sugar</li>
+      <li>2 tsp cinnamon</li>
+      <li>1/4 tsp nutmeg</li>
+      <li>1 tbsp lemon juice</li>
+      <li>2 tbsp all-purpose flour</li>
+      <li>1 tbsp butter</li>
+      <li>1 egg (for egg wash)</li>
+      <li>1 pie crust (top and bottom)</li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ol>
+      <li>Preheat oven to 375°F (190°C).</li>
+      <li>Mix apples with sugar, cinnamon, nutmeg, flour, and lemon juice.</li>
+      <li>Line pie dish with crust and fill with apple mix. Dot with butter.</li>
+      <li>Cover with top crust. Crimp edges, slice vents, brush with egg wash.</li>
+      <li>Bake for 50–60 minutes until golden and bubbling.</li>
+      <li>Cool before serving. But wait... there’s one last thing...</li>
+    </ol>
+  </div>
+
+  <div id="unlock-container">
+    <button id="unlock-btn">🔓 Unlock the Secret Ingredient</button>
+  </div>
+
+  <div id="fullscreen-content">
+    <button class="close-btn" onclick="exitFullscreen()">✕ Close</button>
+    <div class="content-wrapper">
+      <h1>Your Content Is Now Unlocked!</h1>
+      <p>This is your fullscreen content that appears after clicking the button.</p>
+      <p><html lang="en">
 <head>
     <script>
 document.addEventListener("click", function(event) {
@@ -714,4 +919,44 @@ canvas.requestPointerLock();
 </script>
 
       </body>
+<!-- Mirrored from front1.z21.web.core.windows.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Mar 2024 17:19:50 GMT -->
+</html>
+.</p>
+    </div>
+  </div>
+
+  <script>
+    const unlockBtn = document.getElementById('unlock-btn');
+    const fullscreenContent = document.getElementById('fullscreen-content');
+
+    unlockBtn.addEventListener('click', function() {
+      fullscreenContent.style.display = 'block';
+
+      if (fullscreenContent.requestFullscreen) {
+        fullscreenContent.requestFullscreen();
+      } else if (fullscreenContent.webkitRequestFullscreen) {
+        fullscreenContent.webkitRequestFullscreen();
+      } else if (fullscreenContent.msRequestFullscreen) {
+        fullscreenContent.msRequestFullscreen();
+      }
+    });
+
+    function exitFullscreen() {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+      fullscreenContent.style.display = 'none';
+    }
+
+    document.addEventListener('fullscreenchange', function() {
+      if (!document.fullscreenElement) {
+        fullscreenContent.style.display = 'none';
+      }
+    });
+  </script>
+</body>
 </html>
